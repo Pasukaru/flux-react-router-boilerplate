@@ -4,6 +4,7 @@
   "description": "Test Flux architecture with react-router.",
   "main": "js/index.js",
   "dependencies": {
+    "bluebird": "^2.3.5",
     "flux": "^2.0.0",
     "flux-router-component": "^0.2.2",
     "react": "~0.11.0",

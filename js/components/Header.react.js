@@ -16,7 +16,8 @@ var Header = React.createClass({
             links: [
                 {label: 'Index', to: '/'},
                 {label: 'Test', to: 'test'},
-                {label: 'Test Nested', to: 'test-nested'}
+                {label: 'Test Nested', to: 'test-nested'},
+                {label: 'Async', to: 'async'}
             ]
         }
     },
@@ -28,7 +29,7 @@ var Header = React.createClass({
         items.push(<span key="title">{title}</span>);
 
         this.state.links.forEach(function(link){
-            items.push(<span key={link.to+DIVIDER_KEY}>&nbsp;|&nbsp;</span>)
+            items.push(<span key={link.to+DIVIDER_KEY}>&nbsp;|&nbsp;</span>);
             items.push(<Link to={link.to} key={link.to}>{link.label}</Link>);
         }, this);
 
