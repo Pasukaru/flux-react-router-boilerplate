@@ -1,0 +1,47 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background: lightblue;
+}
+.content {
+    position: fixed;
+    top: 30px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: lightgreen;
+}
+.sidebar {
+    position: fixed;
+    top: 30px;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    background: lightgrey;
+}
+
+.sidebar-enter {
+  transform: translateX(200px);
+  transition: transform .5s ease-out;
+}
+
+.sidebar-enter.sidebar-enter-active {
+  transform: translateX(0px);
+}
+.sidebar-leave {
+  transition: transform .5s ease-in;
+  transform: translateX(0px);
+}
+
+.sidebar-leave.sidebar-leave-active {
+    transform: translateX(200px);
+}
+
+.sidebar .test-sidebar {
+	margin: 10px;
+	height: calc(100% - 20px); /* margin*2 */
+	background: lightgoldenrodyellow;
+}
