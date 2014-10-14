@@ -19,3 +19,9 @@ e.g:
 `$ python -m SimpleHTTPServer`
 
 Browse to localhost:8000
+
+To use the minified version, run
+
+`$ npm run build`
+
+and change index.js to use bundle.min.js instead of bundle.js
